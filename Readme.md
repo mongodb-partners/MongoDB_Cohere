@@ -10,7 +10,6 @@ The architecture diagram above illustrates the flow and components of the applic
 
 1. **User Interface (UI)**: The main entry point of the application is `ui.py`. This script handles user interactions and displays the results.
 2. **Backend Processing**: The backend processes the data received from the UI, interacts with the Cohere API, and returns the processed results.
-3. **Cohere API**: The application integrates with Cohere's API to leverage its capabilities for natural language processing.
 
 ## Running the Application
 
@@ -18,14 +17,14 @@ To run the application, follow these steps:
 
 1. **Clone the Repository**:
     ```bash
-    git clone https://github.com/yourusername/Cohere-demo.git
+    git clone https://github.com/mongodb-partners/MongoDB_Cohere.git
     cd Cohere-demo
     ```
 
 2. **Install Dependencies**:
     Ensure you have Python installed. Then, install the required packages:
     ```bash
-    pip install -r requirements.txt
+    pip install pymongo python-dotenv cohere
     ```
 
 3. **Set Up Environment Variables**:
@@ -47,13 +46,8 @@ To run the application, follow these steps:
 The application uses the following environment variables, which should be defined in the `.env` file:
 
 - `COHERE_API_KEY`: Your API key for accessing Cohere's services.
-
-## Files and Directories
-
-- `ui.py`: The main file to run the application.
-- `requirements.txt`: Lists the dependencies required to run the application.
-- `arch_diagram.png`: The architecture diagram of the application.
-- `.env`: File to store environment variables (not included in the repository for security reasons).
+- `HF_TOKEN`: Your Hugging Face token for accessing Hugging Face's services.
+- `MONGO_URI`: The URI for connecting to your MongoDB database.
 
 ## Conclusion
 
