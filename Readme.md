@@ -24,7 +24,7 @@ To run the application, follow these steps:
 2. **Install Dependencies**:
     Ensure you have Python installed. Then, install the required packages:
     ```bash
-    pip install pymongo python-dotenv cohere
+    pip install pymongo python-dotenv cohere streamlit
     ```
 
 3. **Set Up Environment Variables**:
@@ -38,7 +38,7 @@ To run the application, follow these steps:
 4. **Run the Application**:
     Execute the main file to start the application:
     ```bash
-    python ui.py
+    streamlit run ui.py
     ```
 
 ## Environment Variables
